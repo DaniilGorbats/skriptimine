@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#skripti algus
+echo Today is, `date +"%A. %B %d, %Y"`
+echo Time is `date '+%H:%M'`
+cal
+#
+#skripti lõpp
