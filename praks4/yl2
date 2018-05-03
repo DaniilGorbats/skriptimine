@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# skripti algus
+#
+echo -n "Sisestage aluse pikkus sentimeetrites: "
+read pikkus
+echo -n "Sisestage aluse laius sentimeetrites: "
+read laius
+echo -n "Teie kandiku pindala on: "
+expr $pikkus \* $laius
+echo " cm"
+echo "Kui suur on küpsis sentimeetrites? "
+read kypsis
+echo -n "Mitu kihti on tordil? "
+read kihid
+echo -n "Mitu küpsist on pakis? "
+read kypsistepakk
+pindala=`expr $pikkus \* $laius` #see tehe arvutab kandiku pindalat
+kypsiskiht=`expr $pindala / $kypsis` #see tehe arvutab mitu kihi on vaja ühe kihi jaoks
+kypsiskokku=`expr $kypsiskiht \* $kihid` #see tehe arvutab mitu kihti on teil kokku vaja
+pakid=`expr $kypsiskokku / $kypsistepakk` #see tehearvutab mitu pakki küpsiseid on vaja
+jaak=`expr $kypsiskokku % $kypsistepakk` #see tehe arvutab mitu küpsist on vaja lisaks tervetele pakkidele
+echo -n "sul on vaja $pakid küpsiseid ja lisaks on teil vaja $jaak tükki!"
+#
+# skripti lõpp
