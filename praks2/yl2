@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+echo "Daniil Gorbats" # minu nimi
+echo "ISP217" # minu õppegrupp
+echo "Väga hea ja huvitav" # minu aju koostisosa
+echo "jah need muljed" # minu mulje
+#
