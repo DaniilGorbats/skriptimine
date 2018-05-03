@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# skripti algus
+echo "Sisestage suvaline täisarv: " # ytleb inimesele, et ta kirjutaks täisarvu
+read number # teeb taggi number
+if [ $(($number % 2)) -eq 0 ] # arvutus
+then # siis on see paarisarv
+echo $number "on paarisarv!" # ytleb et arv on paarisarv
+else # kui ei ole paarisarv siis on paaritu
+echo $number "on paaritu!" # ytleb et arv on paaritu arv
+fi
+#
+# skripti lõpp
