@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# kasutaja tervitus
+#
+# skripti algus
+who | awk -F ' tty*' '{print $1}' > nimed
+cat nimed | awk -F '.' '{print $2"."$1}' > nimed2 #lõikame perenimi - see on 2. element peale punkti ja salvestame faili
+#who | awk -F '.' '[print $2]' > eesnimi # lõikamine eesnimi -see on 1. element ennem punkti ja salvestame faili
+#paste -d"." perenimi test > nimed # kleebime need failid vastavas järjekorras kokku
+cat nimed2 | sort | uniq # sorteerimine väljund ja võtame korduvad välja
+#
+# skripti lõpp
