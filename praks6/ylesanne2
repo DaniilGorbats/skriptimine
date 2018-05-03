@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# skripti algus
+echo -n "Sisesta reisijate arv: " # reisijate arvu sisestamine
+read reisijad # loeb numbri ja salvestab reisijana
+echo -n "Sisesta kohtade arv: " # bussikohtade arvu sisestamine
+read kohad # loeb numbri ja salvestab kohtadena
+bussid=`expr $reisijad / $kohad` # arvutab reisijad jagada kohad
+yasomigos1=`expr $bussid \* $kohad` # arvutab bussidearv korrutada kohad
+yasomigos2=`expr $reisijad - $yasomigos1` # arvutab reisijad lahutada Ülejäänud inimesed
+if [ $yasomigos2 -ne 0 ] # kui inimesi on rohkem kui 0
+then # siis paneb ühe bussi juurde
+bussid=`expr $bussid + 1`
+fi
+echo "Teil on vaja " $bussid "bussi!" # ütleb mitu bussi on vaja inimeste jaoks
+#
+# skripti lõpp
