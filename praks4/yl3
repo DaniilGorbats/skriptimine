@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# skripti algus
+#
+echo -n "Sisestage bussis reisijate arvu: "
+read reisijad #küsib sisendit
+echo -n "Sisestage bussi kohtade arvu: "
+read bussikohad #küsib sisendit
+taidetudkohad=`expr $reisijad / $bussikohad` #arvutab
+mahajaanud=`expr $reisijad % $bussikohad` #arvutab 
+echo  "Bussis on $taidetudkohad kohta täidetud ja $mahajaanud reisijat on maha jäänud."
+#
+# skripti lõpp
