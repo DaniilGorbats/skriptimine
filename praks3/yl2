@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# skripti algus
+#
+echo `find /var/ -name *.log 2>> /dev/null` #cmd
+#
+# skripti lõpp
