@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# skripti algus
+if [ $(($1 % 2)) -eq 0]
+then
+echo $1 "on paarisarv!"
+else
+echo $1 "on paaritu!"
+fi
+#
+# skripti lõpp
