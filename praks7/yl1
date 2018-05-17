@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# skriptimine
+echo "Sisestage oma vanus: " # ütleb, et inimene sisestaks oma vanuse
+read vanus # jätab vanuse meelde
+if test $vanus -gt 0 -a $vanus -lt 11 # kui sisestatud vanus on 0-11 siis väljastab, et inimene on laps
+then
+echo "Olete laps"
+elif test $vanus -ge 11 -a $vanus -lt 18 # kui sisestatud vanus on 11-18 siis oled nooruk
+then
+echo "Olete nooruk"
+elif test $vanus -ge 18 -a $vanus -lt 63 # kui oled 18-63 aastane siis oled täiskasvanu
+then
+echo "Olete täiskasvanu"
+elif test $vanus -ge 63 -a $vanus -lt 121 # kui oled 63-121 aastane siis oled senioor
+then
+echo "Olete senioor"
+elif test $vanus -ge 121 # kui oled üle 121 aasta vana siis elad tulevikus või oled surnud
+then
+echo "Elad tulevikus või oled surnud xd"
+else
+echo "vigane sisend" # kui inimene ei kirjuta midagi õigesti siis ta saab vastuseks vigane sisend
+fi
+#
+# skripti lõpp
