@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# skripti algus
+echo -n "Sisestage ridade arv: " #küsib ridade arvu
+read ridade_arv #jätab ridade numbri meelde
+var1=$ridade_arv # variable 1
+var2=$ridade_arv # variable 2
+for (( i = 1;$i <= $ridade_arv; i++ )) #for loop
+	do
+	echo -n $i". " # number ja .
+		for (( j = 1; j <= $ridade_arv-i; j++ )) #veel üks for loop
+		do
+			echo -n "O" # teeb tähe O ridadesse
+
+	done
+
+		for (( d = 1; d <=i; d++ )) # kolmas for loop
+		do
+			echo -n "*" # teeb tärni ridadesse
+		done
+
+	echo "" # rea lõpp
+
+done
+#
+# skripti lõpp
