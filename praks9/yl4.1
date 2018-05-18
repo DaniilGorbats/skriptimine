@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# skripti algus
+echo -n "Sisestage ridade arvu: " #Küsib ridade arvu
+read ridade_arv #jätab arvu meelde
+for (( i = $ridade_arv; i >= 1; i-- )) # see on loopi pikkus
+do
+	echo -n "$i. " #kirjutab siia reanumbri
+	for (( j = 1; j <= $i; j++ )) #see on loopi laius
+	do
+		echo -n "*" #tärn mis kirjutatakse reale
+done
+		echo "" #rea lõpp tühi
+done
+#
+# skripti lõpp
