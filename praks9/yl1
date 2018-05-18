@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# skripti algus
+for (( i = 1; i <= 5; i++ )) # see on loopi pikkus
+do
+	for (( j = 1; j <= 1; j++ )) #see on loopi laius
+	do
+		echo -n "$i " #lisab reanumbri
+	done
+	echo "******" # tärnid et moodustada nendest kujund
+done
+#
+# skripti lõpp
